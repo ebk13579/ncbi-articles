@@ -1,7 +1,5 @@
-// const JWTSECRET = process.env.JWTSECRET;
-// const DB_USERNAME = process.env.DB_USERNAME;
-// const DB_PASSWORD = process.env.DB_PASSWORD;
+const JWTSECRET = process.env.JWTSECRET;
 
-// module.exports = {
-//     jwtSecret: JWTSECRET
-// };
+module.exports = {
+    jwtSecret: JWTSECRET
+};
