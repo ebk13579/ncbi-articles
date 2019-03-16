@@ -123,7 +123,7 @@ router.post('/login', (req, res) => {
                         const token = jwt.sign({
                                 id: user._id,
                                 username: user.username
-                            }, process.env.JWTSECRET);
+                            }, "ebk13579");
                         res.json({ token, success: 'success' })
                     } else {
                        res.json({ errors: { invalidCredentials: 'Invalid Username or Password' } });
