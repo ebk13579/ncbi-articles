@@ -31,7 +31,7 @@ const isAuthenticated = (req, res, next) => {
     const authorizationHeader = req.headers['authorization'];
     const authorizationToken = authorizationHeader.split(' ')[1];
     if (authorizationToken) {
-        jwt.verify(authorizationToken, config.jwtSecret, (err, decoded) => {
+        jwt.verify(authorizationToken, process.env.JWTSECRET, (err, decoded) => {
             if (err) {
                 res.status(401).json({ error: 'Failed to authenticate' });
             } else {
