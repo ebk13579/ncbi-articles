@@ -1,7 +1,7 @@
 {
     "name": "basic-mern-app",
     "version": "1.0.0",
-    "description": "A Basic MERN Stack App just for practice",
+    "description": "A Basic MERN Stack App",
     "engines": {
         "node": "10.13.0"
     },
@@ -12,7 +12,7 @@
         "client": "cd client && yarn start",
         "server": "nodemon app.js"
     },
-    "author": "Hemakshi Sachdev",
+    "author": "Evan Kozierachi",
     "license": "ISC",
     "dependencies": {
         "bcryptjs": "^2.4.3",
